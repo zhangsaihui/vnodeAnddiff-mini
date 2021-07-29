@@ -1,7 +1,7 @@
 /*
  * @Author: saihui
  * @Date: 2021-07-21 17:37:20
- * @LastEditTime: 2021-07-28 16:54:37
+ * @LastEditTime: 2021-07-29 11:21:06
  * @LastEditors: saihui
  * @Description:
  */
@@ -26,6 +26,9 @@ export default function path(oldVnode, newVnode) {
     if (newVnode.text) {
       if (newVnode.text !== oldVnode.text) {
         oldVnode.elm.innerText = newVnode.text;
+        // todo 属性的更新。。。
+
+        
       }
     } else if (Array.isArray(newVnode.children)) {
       let och = oldVnode.children;
